@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nexters.moodumdum.PlusActivity">
+
+    <EditText
+        android:id="@+id/contentOfPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:paddingTop="56dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="당신의 잊고 싶은 기억,\n여기에 적어두세요."
+        android:inputType="textMultiLine"
+        android:textColor="#747474"
+        android:textColorHint="#848484"
+        android:textSize="20dp"
+        android:windowSoftInputMode="stateHidden|adjustResize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#4a4a4a"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/categorySelLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_relationship"
+                        android:tag="3"
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/btn_relationship_state"/>
+
+                    <Button
+                        android:id="@+id/btn_family"
+                        android:tag="1"
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/btn_family_state"/>
+
+                    <Button
+                        android:id="@+id/btn_job"
+                        android:tag="5"
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/btn_job_state"/>
+
+                    <Button
+                        android:id="@+id/btn_selfesteem"
+                        android:tag="4"
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/btn_selfesteem_state"/>
+
+                    <Button
+                        android:id="@+id/btn_darkhistory"
+                        android:tag="6"
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/btn_darkhistory_state"/>
+
+                    <Button
+                        android:id="@+id/btn_ect"
+                        android:tag="2"
+                        android:layout_width="78dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/btn_ect_state"/>
+
+                </LinearLayout>
+
+        </HorizontalScrollView>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@null">
+
+        <ImageButton
+            android:id="@+id/onClickToCancle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_cancle"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"/>
+
+        <TextView
+            android:id="@+id/onClickToNext"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="다음"
+            android:textSize="20dp"
+            android:textColor="#747474" />
+
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
